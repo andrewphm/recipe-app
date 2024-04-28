@@ -4,6 +4,7 @@ import DiscoverScreen from '../screens/DiscoverScreen';
 import FavoritesScreen from '../screens/FavouritesScreen';
 import GroceryListScreen from '../screens/GroceryListScreen';
 import { Ionicons } from 'react-native-vector-icons';
+import DiscoverStackNavigator from './DiscoverStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,11 @@ export default function AppNavigator() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Discover" options={{ headerShown: false }} component={DiscoverScreen} />
+      <Tab.Screen
+        name="Discover"
+        options={{ headerShown: false }}
+        component={DiscoverStackNavigator}
+      />
       <Tab.Screen name="Favorites" options={{ headerShown: false }} component={FavoritesScreen} />
       <Tab.Screen
         name="GroceryList"

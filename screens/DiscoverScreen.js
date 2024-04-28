@@ -3,11 +3,14 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Search from '../components/Search';
 import RecipeItem from '../components/RecipeItem';
+import { TouchableHighlight, TouchableOpacity } from 'react-native';
 
-function DiscoverScreen() {
+function DiscoverScreen({ navigation }) {
   const recipes = useSelector((state) => state.recipes);
   const recipe = [recipes[0], recipes[1]];
-
+  const handlePress = (recipe) => {
+    navigation.navigate('DetailScreen', { recipe });
+  };
   return (
     <>
       <Box
@@ -26,7 +29,9 @@ function DiscoverScreen() {
       </Box>
       <ScrollView px="5">
         {recipe.map((recipe) => (
-          <RecipeItem {...recipe} />
+          <TouchableOpacity key={recipe.id} onPress={() => handlePress(recipe)}>
+            <RecipeItem {...recipe} />
+          </TouchableOpacity>
         ))}
       </ScrollView>
     </>
