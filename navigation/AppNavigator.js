@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import ExploreScreen from '../screens/ExploreScreen';
+import DiscoverScreen from '../screens/DiscoverScreen';
 import FavoritesScreen from '../screens/FavouritesScreen';
 import GroceryListScreen from '../screens/GroceryListScreen';
 import { Ionicons } from 'react-native-vector-icons';
@@ -14,7 +14,7 @@ export default function AppNavigator() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
-          if (route.name === 'Explore') {
+          if (route.name === 'Discover') {
             iconName = focused ? 'eye' : 'eye-outline';
           } else if (route.name === 'Favorites') {
             iconName = focused ? 'star' : 'star-outline';
@@ -28,9 +28,13 @@ export default function AppNavigator() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Explore" component={ExploreScreen} />
-      <Tab.Screen name="Favorites" component={FavoritesScreen} />
-      <Tab.Screen name="GroceryList" component={GroceryListScreen} />
+      <Tab.Screen name="Discover" options={{ headerShown: false }} component={DiscoverScreen} />
+      <Tab.Screen name="Favorites" options={{ headerShown: false }} component={FavoritesScreen} />
+      <Tab.Screen
+        name="GroceryList"
+        options={{ headerShown: false }}
+        component={GroceryListScreen}
+      />
     </Tab.Navigator>
   );
 }
