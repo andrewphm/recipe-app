@@ -1,7 +1,9 @@
 {
   "recipes": [
     {
-      "name": "Chocolate Chip Cookies",
+      "title": "Chocolate Chip Cookies",
+      "type": "dessert",
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "ingredients": [
         "1 cup softened butter",
         "1 cup white sugar",
@@ -14,9 +16,10 @@
         "1/2 teaspoon salt",
         "2 cups semisweet chocolate chips"
       ],
+      "servings": "24",
       "steps": [
         "Preheat the oven to 350 degrees F (175 degrees C).",
-        "In a large bowl, cream together the butter, sugar until smooth.",
+        "In a large bowl, cream together the butter and sugar until smooth.",
         "Beat in the eggs one at a time, then stir in the vanilla.",
         "Dissolve baking soda in hot water and add to the mixture.",
         "Sift together the flour, baking powder, and salt; mix into the creamed mixture.",
@@ -24,93 +27,292 @@
         "Drop by large spoonfuls onto ungreased pans.",
         "Bake for about 10 minutes in the preheated oven, or until edges are nicely browned."
       ],
-      "location": "United States"
+      "Cuisine": "United States",
+      "difficulty": "easy",
+      "rating": "4.4",
+      "cookTime": "30 minutes",
+      "author": {
+        "name": "John Doe",
+        "image": "img-uri-here"
+      }
     },
     {
-      "name": "Classic Margherita Pizza",
+      "title": "Tomato Basil Pasta",
+      "type": "dinner",
+      "image": "https://plus.unsplash.com/premium_photo-1692394464954-02ad05c0681f?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "ingredients": [
-        "Pizza dough",
-        "2 tablespoons olive oil",
-        "3 cloves garlic, minced",
-        "1 can crushed tomatoes",
-        "Fresh basil",
-        "8 ounces mozzarella cheese, sliced",
-        "Salt and pepper to taste"
+        "1 lb spaghetti",
+        "4 tomatoes, large diced",
+        "1 onion, finely chopped",
+        "4 cloves garlic, minced",
+        "1/4 cup olive oil",
+        "1/2 cup fresh basil, chopped",
+        "Salt and pepper to taste",
+        "Grated Parmesan cheese"
       ],
+      "servings": "4",
       "steps": [
-        "Preheat oven to 475 degrees F (245 degrees C).",
-        "Roll out pizza dough to desired shape and thickness.",
-        "Brush dough with olive oil and spread minced garlic evenly.",
-        "Spread crushed tomatoes over the dough, sprinkle with salt and pepper.",
-        "Arrange mozzarella slices and basil leaves on top.",
-        "Bake in preheated oven for 12-15 minutes or until crust is golden brown and cheese is bubbly."
+        "Cook spaghetti according to package instructions.",
+        "Heat olive oil in a pan and saute onions until translucent.",
+        "Add garlic and tomatoes, cook until tomatoes are tender.",
+        "Stir in chopped basil and season with salt and pepper.",
+        "Toss the cooked spaghetti with the tomato mixture.",
+        "Serve with grated Parmesan cheese on top."
       ],
-      "location": "Italy"
+      "Cuisine": "Italian",
+      "difficulty": "easy",
+      "rating": "4.7",
+      "cookTime": "20 minutes",
+      "author": {
+        "name": "Maria Rossi",
+        "image": "img-uri-here"
+      }
     },
     {
-      "name": "Caesar Salad",
+      "title": "Chicken Teriyaki",
+      "type": "dinner",
+      "image": "img-uri-here",
       "ingredients": [
-        "1 head romaine lettuce, washed and chopped",
-        "1/2 cup Parmesan cheese, grated",
-        "1 cup croutons",
-        "1/3 cup Caesar dressing",
-        "Salt and pepper to taste"
-      ],
-      "steps": [
-        "In a large salad bowl, combine chopped romaine lettuce, croutons, and Parmesan cheese.",
-        "Drizzle Caesar dressing over the salad.",
-        "Toss everything together until the lettuce is evenly coated.",
-        "Season with salt and pepper to taste. Serve immediately."
-      ],
-      "location": "North America"
-    },
-    {
-      "name": "Beef Stroganoff",
-      "ingredients": [
-        "2 tablespoons butter",
-        "1 pound beef sirloin, thinly sliced",
-        "1 onion, chopped",
+        "2 lbs chicken thighs",
+        "1/2 cup soy sauce",
+        "1/4 cup rice vinegar",
+        "1/4 cup honey",
+        "1 tablespoon grated ginger",
         "2 cloves garlic, minced",
-        "1 cup mushrooms, sliced",
-        "1 tablespoon all-purpose flour",
-        "1 cup beef broth",
-        "1 tablespoon mustard",
-        "1/2 cup sour cream",
-        "Salt and pepper to taste"
+        "1 tablespoon sesame oil",
+        "1 teaspoon cornstarch",
+        "Sesame seeds",
+        "Green onions, sliced for garnish"
       ],
+      "servings": "4",
       "steps": [
-        "Melt butter in a large skillet over medium heat.",
-        "Add sliced beef and cook until browned. Remove beef from skillet and set aside.",
-        "In the same skillet, add onion and garlic, cooking until soft.",
-        "Add mushrooms and cook until soft.",
-        "Stir in flour and gradually add beef broth and mustard; bring to a simmer.",
-        "Return beef to skillet and cook until heated through.",
-        "Remove from heat and stir in sour cream. Season with salt and pepper.",
-        "Serve over cooked egg noodles or rice."
+        "In a bowl, mix soy sauce, rice vinegar, honey, ginger, garlic, and sesame oil.",
+        "Marinate the chicken in the mixture for at least 1 hour.",
+        "In a skillet, cook chicken until golden brown on both sides.",
+        "Add the marinade to the skillet and bring to boil.",
+        "Mix cornstarch with a little water and add to the skillet to thicken the sauce.",
+        "Sprinkle sesame seeds and garnish with green onions before serving."
       ],
-      "location": "Russia"
+      "Cuisine": "Japanese",
+      "difficulty": "medium",
+      "rating": "4.6",
+      "cookTime": "45 minutes",
+      "author": {
+        "name": "Haruto Tanaka",
+        "image": "img-uri-here"
+      }
     },
     {
-      "name": "Vegetable Stir-Fry",
+      "title": "Huevos Rancheros",
+      "type": "breakfast",
+      "image": "img-uri-here",
       "ingredients": [
+        "4 corn tortillas",
+        "4 eggs",
+        "1 cup ranchero sauce",
+        "1 avocado, sliced",
+        "1/4 cup crumbled feta cheese",
+        "1/4 cup cilantro, chopped",
+        "1 lime, cut into wedges"
+      ],
+      "servings": "4",
+      "steps": [
+        "Heat tortillas in a skillet until warm and slightly crispy.",
+        "Cook eggs to preference (usually sunny side up).",
+        "Place each egg on a tortilla and spoon ranchero sauce over the top.",
+        "Top with avocado slices, feta cheese, and cilantro.",
+        "Serve with a wedge of lime."
+      ],
+      "Cuisine": "Mexican",
+      "difficulty": "easy",
+      "rating": "4.8",
+      "cookTime": "15 minutes",
+      "author": {
+        "name": "Luisa Hernandez",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Beef and Broccoli Stir-Fry",
+      "type": "dinner",
+      "image": "img-uri-here",
+      "ingredients": [
+        "1 lb beef sirloin, sliced thinly",
+        "2 cups broccoli florets",
+        "1 onion, sliced",
+        "2 cloves garlic, minced",
+        "1 tablespoon ginger, minced",
+        "1/4 cup soy sauce",
+        "2 tablespoons oyster sauce",
+        "1 tablespoon sugar",
+        "1 teaspoon cornstarch",
         "2 tablespoons vegetable oil",
-        "1 bell pepper, sliced",
-        "1 small broccoli, cut into florets",
-        "1 carrot, sliced",
-        "1 zucchini, sliced",
-        "2 cloves garlic, minced",
-        "1 tablespoon soy sauce",
-        "1 tablespoon oyster sauce",
-        "1 teaspoon sesame oil"
+        "Sesame seeds for garnish"
       ],
+      "servings": "4",
       "steps": [
-        "Heat vegetable oil in a large skillet or wok over medium-high heat.",
-        "Add garlic and stir-fry for about 30 seconds, until fragrant.",
-        "Add bell pepper, broccoli, carrot, and zucchini; stir-fry until vegetables are tender yet crisp.",
-        "Stir in soy sauce, oyster sauce, and sesame oil; mix well.",
-        "Cook for an additional 2 minutes. Serve hot."
+        "In a bowl, mix soy sauce, oyster sauce, sugar, and cornstarch with a bit of water to make the sauce.",
+        "Heat oil in a wok or large skillet over high heat.",
+        "Add garlic, ginger, and onion, stir-fry until fragrant.",
+        "Add beef and stir-fry until it begins to brown.",
+        "Add broccoli and continue to cook until vegetables are tender.",
+        "Pour the prepared sauce over the beef and broccoli, stir well until the sauce thickens.",
+        "Sprinkle with sesame seeds and serve hot."
       ],
-      "location": "East Asia"
+      "Cuisine": "Chinese",
+      "difficulty": "medium",
+      "rating": "4.5",
+      "cookTime": "30 minutes",
+      "author": {
+        "name": "Chen Wei",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Classic French Crepes",
+      "type": "breakfast",
+      "image": "img-uri-here",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 eggs",
+        "1/2 cup milk",
+        "1/2 cup water",
+        "1/4 teaspoon salt",
+        "2 tablespoons butter, melted"
+      ],
+      "servings": "8",
+      "steps": [
+        "In a large mixing bowl, whisk together the flour and the eggs.",
+        "Gradually add in the milk and water, stirring to combine.",
+        "Add the salt and butter; beat until smooth.",
+        "Heat a lightly oiled griddle or frying pan over medium-high heat.",
+        "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each crepe.",
+        "Tilt the pan with a circular motion so that the batter coats the surface evenly.",
+        "Cook the crepe for about 2 minutes, until the bottom is light brown. Flip and cook the other side.",
+        "Serve hot with your choice of toppings."
+      ],
+      "Cuisine": "French",
+      "difficulty": "easy",
+      "rating": "4.7",
+      "cookTime": "20 minutes",
+      "author": {
+        "name": "Elise Durand",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Lamb Rogan Josh",
+      "type": "dinner",
+      "image": "img-uri-here",
+      "ingredients": [
+        "2 lbs lamb, cut into cubes",
+        "2 onions, finely chopped",
+        "4 cloves garlic, minced",
+        "1 inch ginger, minced",
+        "2 tomatoes, pureed",
+        "2 tablespoons ghee",
+        "1 cinnamon stick",
+        "4 cardamom pods",
+        "4 cloves",
+        "1 bay leaf",
+        "1 teaspoon cumin powder",
+        "1 teaspoon coriander powder",
+        "1/2 teaspoon turmeric powder",
+        "1 teaspoon paprika",
+        "1/2 teaspoon garam masala",
+        "1 cup yogurt",
+        "1 cup water",
+        "Salt to taste",
+        "Cilantro for garnish"
+      ],
+      "servings": "4",
+      "steps": [
+        "Heat ghee in a large pot over medium heat.",
+        "Add cinnamon, cardamom, cloves, and bay leaf. Sauté for a minute.",
+        "Add onions, garlic, and ginger. Cook until onions are golden.",
+        "Add cumin, coriander, turmeric, and paprika. Stir well.",
+        "Add lamb and brown all sides.",
+        "Pour in tomato puree and yogurt. Mix well until combined.",
+        "Add water and bring to a boil. Reduce heat to low, cover, and simmer for 1 hour or until lamb is tender.",
+        "Stir in garam masala and season with salt.",
+        "Garnish with cilantro and serve with rice or naan."
+      ],
+      "Cuisine": "Indian",
+      "difficulty": "medium",
+      "rating": "4.6",
+      "cookTime": "90 minutes",
+      "author": {
+        "name": "Amit Patel",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Spicy Thai Basil Chicken",
+      "type": "dinner",
+      "image": "img-uri-here",
+      "ingredients": [
+        "1 lb chicken breast, finely chopped",
+        "1 bunch Thai basil leaves",
+        "3 cloves garlic, minced",
+        "1 small red chili, finely sliced",
+        "1 tablespoon fish sauce",
+        "1 teaspoon sugar",
+        "2 tablespoons soy sauce",
+        "2 tablespoons oyster sauce",
+        "1 tablespoon vegetable oil"
+      ],
+      "servings": "4",
+      "steps": [
+        "Heat oil in a skillet over medium-high heat.",
+        "Add garlic and chili, sauté for a minute until fragrant.",
+        "Add chicken and cook until brown.",
+        "Stir in soy sauce, oyster sauce, fish sauce, and sugar until well combined.",
+        "Add Thai basil and cook until wilted.",
+        "Serve hot over steamed rice."
+      ],
+      "Cuisine": "Thai",
+      "difficulty": "easy",
+      "rating": "4.8",
+      "cookTime": "25 minutes",
+      "author": {
+        "name": "Nicha K.",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "New York Style Cheesecake",
+      "type": "dessert",
+      "image": "img-uri-here",
+      "ingredients": [
+        "1 1/2 cups graham cracker crumbs",
+        "1/4 cup sugar",
+        "1/3 cup melted butter",
+        "4 (8 ounce) packages cream cheese",
+        "1 1/4 cups sugar",
+        "1/2 cup sour cream",
+        "2 teaspoons vanilla extract",
+        "5 eggs",
+        "1 cup heavy cream"
+      ],
+      "servings": "12",
+      "steps": [
+        "Preheat oven to 350 degrees F (175 degrees C).",
+        "Mix graham cracker crumbs, 1/4 cup sugar, and melted butter. Press onto the bottom of a 9-inch springform pan.",
+        "Beat cream cheese with 1 1/4 cups sugar in a large bowl until smooth. Mix in sour cream and vanilla.",
+        "Add eggs one at a time, beating just until blended. Pour over crust.",
+        "Bake in preheated oven for 50 minutes.",
+        "Turn oven off and let cake cool in oven with the door ajar for 1 hour.",
+        "Chill in refrigerator for at least 4 hours.",
+        "Serve with whipped cream or fruit topping."
+      ],
+      "Cuisine": "American",
+      "difficulty": "medium",
+      "rating": "5.0",
+      "cookTime": "5 hours",
+      "author": {
+        "name": "Emily Robinson",
+        "image": "img-uri-here"
+      }
     }
   ]
 }
