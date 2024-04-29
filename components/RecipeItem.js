@@ -40,12 +40,14 @@ export default function RecipeItem({ image, rating, title, cookTime, difficulty,
         <Text fontSize={15} bold>
           {title}
         </Text>
-        <HStack space={2}>
+        <HStack space={2} alignItems={'center'}>
           <HStack space={1} alignItems="center">
             <Icon as={Ionicons} name="time" size="sm" color="orange.500" />
             <Text>{cookTime}</Text>
           </HStack>
+          <Icon as={Ionicons} name="ellipse" size="2" color="gray.400" />
           <Text>{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</Text>
+          <Icon as={Ionicons} name="ellipse" size="2" color="gray.400" />
           <Text>By {author.name}</Text>
         </HStack>
       </Box>
