@@ -37,7 +37,7 @@ export default function AppNavigator() {
       <Tab.Screen name="Favorites" options={{ headerShown: false }} component={FavoritesScreen} />
       <Tab.Screen
         name="GroceryList"
-        options={{ title: 'Grocery List' }}
+        options={{ headerShown: false }}
         component={GroceryListScreen}
       />
     </Tab.Navigator>

@@ -5,14 +5,17 @@ export const groceryListSlice = createSlice({
   initialState: [],
   reducers: {
     addToList: (state, action) => {
-      state.push(action.payload);
+      state.push({ title: action.payload, id: Date.now(), completed: false });
     },
     removeFromList: (state, action) => {
       return state.filter((item) => item.id !== action.payload);
     },
+    clearList: (state) => {
+      return [];
+    },
   },
 });
 
-export const { addToList, removeFromList } = groceryListSlice.actions;
+export const { addToList, removeFromList, clearList } = groceryListSlice.actions;
 
 export default groceryListSlice.reducer;
