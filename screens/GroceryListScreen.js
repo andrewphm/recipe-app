@@ -1,17 +1,23 @@
-import { View, Text, ScrollView, Box, Input, HStack, Button, Icon } from 'native-base';
+import { Text, ScrollView, Box, Input, HStack, Button, Icon } from 'native-base';
 import { useDispatch, useSelector } from 'react-redux';
-import { Dimensions, SafeAreaView, TouchableOpacity } from 'react-native';
+import { SafeAreaView, TouchableOpacity } from 'react-native';
 import { addToList, clearList, completeItem, removeFromList } from '../features/groceryListSlice';
 import { useState } from 'react';
 import { Ionicons } from 'react-native-vector-icons';
+import GroceryItem from '../components/GroceryItem';
 
 function GroceryListScreen() {
   const [input, setInput] = useState('');
   const state = useSelector((state) => state.groceryList);
-  const screenHeight = Dimensions.get('window').height;
   const dispatch = useDispatch();
   const handleAddToList = (item) => {
     dispatch(addToList(item));
+  };
+  const handleOnPress = (item) => {
+    dispatch(completeItem(item.title));
+  };
+  const handleOnRemove = (item) => {
+    dispatch(removeFromList(item.title));
   };
 
   return (
@@ -43,42 +49,12 @@ function GroceryListScreen() {
           ) : (
             <ScrollView p={2} my={1} bgColor={'light.100'} rounded="lg">
               {state.map((item, i) => (
-                <TouchableOpacity
-                  p={2}
-                  key={item.name}
-                  onPress={() => {
-                    dispatch(completeItem(item.title));
-                  }}
-                >
-                  <HStack
-                    space={2}
-                    alignItems={'center'}
-                    p={2}
-                    bgColor={item.completed ? 'light.200' : 'light.100'}
-                    rounded="lg"
-                    borderColor={'light.200'}
-                    borderWidth="1"
-                    shadow="1"
-                    my={1}
-                  >
-                    <Icon
-                      as={Ionicons}
-                      name={item.completed ? 'ellipse' : 'ellipse-outline'}
-                      size="sm"
-                      color="orange.500"
-                    />
-                    <Text flex={1}>{item.title}</Text>
-                    <Icon
-                      as={Ionicons}
-                      name="close"
-                      size="sm"
-                      color="red.500"
-                      onPress={() => {
-                        dispatch(removeFromList(item.title));
-                      }}
-                    />
-                  </HStack>
-                </TouchableOpacity>
+                <GroceryItem
+                  key={item.title}
+                  item={item}
+                  handleOnPress={handleOnPress}
+                  handleOnRemove={handleOnRemove}
+                />
               ))}
             </ScrollView>
           )}
