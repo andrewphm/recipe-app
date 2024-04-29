@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import Search from '../components/Search';
 import RecipeItem from '../components/RecipeItem';
 import { TouchableHighlight, TouchableOpacity } from 'react-native';
+import Categories from '../components/Categories';
 
 function DiscoverScreen({ navigation }) {
   const recipes = useSelector((state) => state.recipes);
@@ -17,7 +18,7 @@ function DiscoverScreen({ navigation }) {
         bg={['orange.500']}
         px="8"
         py="4"
-        maxHeight={200}
+        minHeight={200}
         flex={1}
         roundedBottom="30"
         roundedTop="50"
@@ -28,11 +29,22 @@ function DiscoverScreen({ navigation }) {
         <Search />
       </Box>
       <ScrollView px="5">
-        {recipe.map((recipe) => (
-          <TouchableOpacity key={recipe.id} onPress={() => handlePress(recipe)}>
-            <RecipeItem {...recipe} />
-          </TouchableOpacity>
-        ))}
+        <Categories />
+        <Box>
+          <HStack space={2} alignItems="center" justifyContent={'space-between'} mb="2">
+            <Text fontSize="xl" fontWeight="bold">
+              Popular Recipes
+            </Text>
+            <Text fontWeight={'semibold'} color="orange.500">
+              See all
+            </Text>
+          </HStack>
+          {recipe.map((recipe) => (
+            <TouchableOpacity key={recipe.id} onPress={() => handlePress(recipe)}>
+              <RecipeItem {...recipe} />
+            </TouchableOpacity>
+          ))}
+        </Box>
       </ScrollView>
     </>
   );
