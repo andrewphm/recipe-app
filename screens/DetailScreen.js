@@ -1,7 +1,8 @@
 import { Text, Box, AspectRatio, Image, HStack, Icon, VStack, Divider, Button } from 'native-base';
-
+import { useDispatch } from 'react-redux';
 import { Ionicons } from '@expo/vector-icons';
 import { ScrollView } from 'react-native';
+import { addRecipeToList } from '../features/groceryListSlice';
 
 export default function DetailScreen({ route }) {
   const recipe = route.params.recipe;
@@ -17,6 +18,7 @@ export default function DetailScreen({ route }) {
     Cuisine,
     servings,
   } = recipe;
+  const dispatch = useDispatch();
 
   return (
     <Box flex={1} bg="white">
@@ -139,7 +141,10 @@ export default function DetailScreen({ route }) {
               color: 'white',
               fontWeight: 'bold',
             }}
-            onPress={() => alert('Added to Grocery List')}
+            onPress={() => {
+              alert('Added to Grocery List');
+              dispatch(addRecipeToList(recipe));
+            }}
           >
             Add to Grocery List
           </Button>
