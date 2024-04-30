@@ -51,9 +51,9 @@ export default function Categories({ handleCategoryPress }) {
       </HStack>
 
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        {categories.map((category) => (
+        {categories.map((category, i) => (
           <TouchableOpacity
-            key={category}
+            key={category + i}
             onPress={() => {
               handleCategoryPress(category.title);
             }}

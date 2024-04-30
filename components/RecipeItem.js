@@ -1,7 +1,22 @@
 import { AspectRatio, Box, Image, Text, HStack, Icon } from 'native-base';
+import { TouchableOpacity } from 'react-native';
 import { Ionicons } from 'react-native-vector-icons';
+import { useSelector } from 'react-redux';
+import { addToFavourites, removeFromFavourites } from '../features/favouritesSlice';
+import { useDispatch } from 'react-redux';
 
-export default function RecipeItem({ image, rating, title, cookTime, difficulty, author }) {
+export default function RecipeItem({ recipe }) {
+  const { title, image, rating, cookTime, difficulty, author } = recipe;
+  const favourites = useSelector((state) => state.favourites);
+  const favouritesTitles = favourites.map((recipe) => recipe.title);
+  const dispatch = useDispatch();
+  const handleFavouritePress = (recipe) => {
+    if (favouritesTitles.includes(recipe.title)) {
+      dispatch(removeFromFavourites(recipe.title));
+    } else {
+      dispatch(addToFavourites(recipe));
+    }
+  };
   return (
     <Box>
       <Box roundedTop="3xl" overflow={'hidden'}>
@@ -23,8 +38,21 @@ export default function RecipeItem({ image, rating, title, cookTime, difficulty,
             <Text bold>{rating} rating</Text>
           </HStack>
         </Box>
-        <Box bgColor="white" position="absolute" right="3" top="2" p="2" rounded="full" shadow="lg">
-          <Icon as={Ionicons} name="heart" size="sm" color="red.500" />
+        <Box zIndex={100} position="absolute" right="3" top="2">
+          <TouchableOpacity
+            onPress={() => {
+              handleFavouritePress(recipe);
+            }}
+          >
+            <Box p="2" rounded="full" shadow="lg" bgColor="white">
+              <Icon
+                as={Ionicons}
+                name="heart"
+                size="sm"
+                color={favouritesTitles.includes(title) ? 'red.500' : 'gray.400'}
+              />
+            </Box>
+          </TouchableOpacity>
         </Box>
       </Box>
       <Box

@@ -1,10 +1,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import DiscoverScreen from '../screens/DiscoverScreen';
-import FavoritesScreen from '../screens/FavouritesScreen';
 import GroceryListScreen from '../screens/GroceryListScreen';
 import { Ionicons } from 'react-native-vector-icons';
 import DiscoverStackNavigator from './DiscoverStackNavigator';
+import FavouritesStackNavigator from './FavouritesStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,7 +33,11 @@ export default function AppNavigator() {
         options={{ headerShown: false }}
         component={DiscoverStackNavigator}
       />
-      <Tab.Screen name="Favorites" options={{ headerShown: false }} component={FavoritesScreen} />
+      <Tab.Screen
+        name="Favorites"
+        options={{ headerShown: false }}
+        component={FavouritesStackNavigator}
+      />
       <Tab.Screen
         name="GroceryList"
         options={{ headerShown: false }}
