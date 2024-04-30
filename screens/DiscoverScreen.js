@@ -12,6 +12,10 @@ function DiscoverScreen({ navigation }) {
   const handlePress = (recipe) => {
     navigation.navigate('DetailScreen', { recipe });
   };
+
+  const handleCategoryPress = (category) => {
+    navigation.navigate('CategoryScreen', { category });
+  };
   return (
     <>
       <Box
@@ -29,7 +33,7 @@ function DiscoverScreen({ navigation }) {
         <Search />
       </Box>
       <ScrollView px="5">
-        <Categories />
+        <Categories handleCategoryPress={handleCategoryPress} />
         <Box>
           <HStack space={2} alignItems="center" justifyContent={'space-between'} mb="2">
             <Text fontSize="xl" fontWeight="bold">

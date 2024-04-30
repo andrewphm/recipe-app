@@ -1,7 +1,7 @@
 import { Box, Center, HStack, Image, ScrollView, Text, View } from 'native-base';
 import { TouchableOpacity } from 'react-native';
 
-export default function Categories() {
+export default function Categories({ handleCategoryPress }) {
   const categories = [
     {
       title: 'Breakfast',
@@ -52,7 +52,12 @@ export default function Categories() {
 
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         {categories.map((category) => (
-          <TouchableOpacity key={category}>
+          <TouchableOpacity
+            key={category}
+            onPress={() => {
+              handleCategoryPress(category.title);
+            }}
+          >
             <Box
               bgColor="light.100"
               rounded="full"
