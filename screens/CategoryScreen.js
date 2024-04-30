@@ -25,7 +25,7 @@ export default function CategoryScreen({ route, navigation }) {
       </Box>
       <ScrollView p={2} my={1} bgColor={'light.100'} rounded="lg">
         {categoryRecipes.map((recipe) => (
-          <TouchableOpacity key={recipe.id} onPress={() => handlePress(recipe)}>
+          <TouchableOpacity key={recipe.title} onPress={() => handlePress(recipe)}>
             <RecipeItem {...recipe} />
           </TouchableOpacity>
         ))}

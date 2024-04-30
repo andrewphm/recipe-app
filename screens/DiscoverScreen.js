@@ -43,7 +43,7 @@ function DiscoverScreen({ navigation }) {
               See all
             </Text>
           </HStack>
-          {recipe.map((recipe) => (
+          {recipes.map((recipe) => (
             <TouchableOpacity key={recipe.id} onPress={() => handlePress(recipe)}>
               <RecipeItem {...recipe} />
             </TouchableOpacity>

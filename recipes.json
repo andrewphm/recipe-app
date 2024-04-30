@@ -71,7 +71,7 @@
     {
       "title": "Chicken Teriyaki",
       "type": "dinner",
-      "image": "img-uri-here",
+      "image": "https://images.unsplash.com/photo-1516684669134-de6f7c473a2a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "ingredients": [
         "2 lbs chicken thighs",
         "1/2 cup soy sauce",
@@ -105,7 +105,7 @@
     {
       "title": "Huevos Rancheros",
       "type": "breakfast",
-      "image": "img-uri-here",
+      "image": "https://boulderlocavore.com/wp-content/uploads/2022/04/huevos-rancheros-BoulderLocavore.com-8475ig-500x375.jpg",
       "ingredients": [
         "4 corn tortillas",
         "4 eggs",
@@ -135,7 +135,7 @@
     {
       "title": "Beef and Broccoli Stir-Fry",
       "type": "dinner",
-      "image": "img-uri-here",
+      "image": "https://cleanfoodcrush.com/wp-content/uploads/2022/05/Beef-and-broccoli-stir-fry-5.jpg",
       "ingredients": [
         "1 lb beef sirloin, sliced thinly",
         "2 cups broccoli florets",
@@ -171,7 +171,7 @@
     {
       "title": "Classic French Crepes",
       "type": "breakfast",
-      "image": "img-uri-here",
+      "image": "https://www.theflavorbender.com/wp-content/uploads/2022/06/Crepes-03-2.jpg",
       "ingredients": [
         "1 cup all-purpose flour",
         "2 eggs",
@@ -203,7 +203,7 @@
     {
       "title": "Lamb Rogan Josh",
       "type": "dinner",
-      "image": "img-uri-here",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/rogan-josh-wide-1572547980.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*",
       "ingredients": [
         "2 lbs lamb, cut into cubes",
         "2 onions, finely chopped",
@@ -249,7 +249,7 @@
     {
       "title": "Spicy Thai Basil Chicken",
       "type": "dinner",
-      "image": "img-uri-here",
+      "image": "https://drivemehungry.com/wp-content/uploads/2021/10/thai-basil-chicken-10.jpg",
       "ingredients": [
         "1 lb chicken breast, finely chopped",
         "1 bunch Thai basil leaves",
@@ -282,7 +282,7 @@
     {
       "title": "New York Style Cheesecake",
       "type": "dessert",
-      "image": "img-uri-here",
+      "image": "https://www.seriouseats.com/thmb/deFCx8YVoK5b_rXrIco5oc2Qo4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__05__20190520-cheesecake-vicky-wasik-34-16488b3671ae47b5b29eb7124dbaf938.jpg",
       "ingredients": [
         "1 1/2 cups graham cracker crumbs",
         "1/4 cup sugar",
@@ -311,6 +311,101 @@
       "cookTime": "5 hours",
       "author": {
         "name": "Emily Robinson",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Grilled Salmon with Avocado Salsa",
+      "type": "lunch",
+      "image": "https://gimmedelicious.com/wp-content/uploads/2021/09/Grilled-Salmon-with-avocado-Salsa-sq.jpg",
+      "ingredients": [
+        "4 salmon fillets",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste",
+        "1 avocado, diced",
+        "1 small red onion, finely chopped",
+        "1 jalapeño, seeded and chopped",
+        "Juice of 2 limes",
+        "1/4 cup chopped cilantro"
+      ],
+      "servings": "4",
+      "steps": [
+        "Preheat grill to medium-high heat.",
+        "Brush salmon fillets with olive oil, season with salt and pepper.",
+        "Grill salmon for 6-8 minutes on each side or until fully cooked.",
+        "In a bowl, combine diced avocado, onion, jalapeño, lime juice, and cilantro.",
+        "Spoon avocado salsa over grilled salmon fillets before serving."
+      ],
+      "Cuisine": "American",
+      "difficulty": "easy",
+      "rating": "4.7",
+      "cookTime": "20 minutes",
+      "author": {
+        "name": "John Doe",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Mediterranean Quinoa Salad",
+      "type": "lunch",
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad-500x500.jpg",
+      "ingredients": [
+        "1 cup quinoa",
+        "2 cups water",
+        "1/2 cup cherry tomatoes, halved",
+        "1/2 cucumber, diced",
+        "1/4 cup Kalamata olives, sliced",
+        "1/4 cup feta cheese, crumbled",
+        "2 tablespoons olive oil",
+        "Juice of 1 lemon",
+        "Salt and pepper to taste",
+        "1/4 cup chopped fresh parsley"
+      ],
+      "servings": "4",
+      "steps": [
+        "Rinse quinoa under cold water until water runs clear.",
+        "Bring quinoa and water to a boil in a saucepan. Reduce heat to low, cover, and simmer until quinoa is tender, about 15 minutes.",
+        "Fluff quinoa with a fork and allow to cool.",
+        "In a large bowl, combine quinoa, tomatoes, cucumber, olives, and feta cheese.",
+        "Whisk together olive oil, lemon juice, salt, and pepper to create a dressing.",
+        "Pour dressing over quinoa mixture and toss to coat evenly.",
+        "Garnish with fresh parsley before serving."
+      ],
+      "Cuisine": "Mediterranean",
+      "difficulty": "easy",
+      "rating": "4.5",
+      "cookTime": "30 minutes",
+      "author": {
+        "name": "Alice Johnson",
+        "image": "img-uri-here"
+      }
+    },
+    {
+      "title": "Chicken Caesar Wrap",
+      "type": "lunch",
+      "image": "https://littlesunnykitchen.com/wp-content/uploads/Chicken-Caesar-Wraps-16.jpg",
+      "ingredients": [
+        "4 large flour tortillas",
+        "2 cups cooked chicken, shredded",
+        "1 cup Caesar salad dressing",
+        "2 cups romaine lettuce, chopped",
+        "1/2 cup Parmesan cheese, grated",
+        "1/2 cup croutons, lightly crushed"
+      ],
+      "servings": "4",
+      "steps": [
+        "Lay tortillas flat on a clean surface.",
+        "Spread Caesar dressing evenly across each tortilla.",
+        "Top dressing with shredded chicken, chopped lettuce, grated Parmesan, and crushed croutons.",
+        "Roll each tortilla tightly to form a wrap, ensuring the ends are tucked in.",
+        "Cut each wrap in half diagonally and serve."
+      ],
+      "Cuisine": "American",
+      "difficulty": "easy",
+      "rating": "4.6",
+      "cookTime": "15 minutes",
+      "author": {
+        "name": "Michael Brown",
         "image": "img-uri-here"
       }
     }
