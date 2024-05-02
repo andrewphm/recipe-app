@@ -20,7 +20,7 @@ function FavoritesScreen({ navigation }) {
       >
         <Center>
           <Text fontSize="xl" fontWeight="bold" color="white">
-            Favorite Recipes
+            Favourite Recipes
           </Text>
         </Center>
       </Box>
