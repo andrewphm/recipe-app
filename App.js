@@ -1,19 +1,20 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
 import { NativeBaseProvider } from 'native-base';
-import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
 import AppNavigator from './navigation/AppNavigator';
-import { store } from './store';
+import { store, persistor } from './store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 export default function App() {
   return (
     <Provider store={store}>
-      <NavigationContainer>
-        <NativeBaseProvider>
-          <AppNavigator />
-        </NativeBaseProvider>
-      </NavigationContainer>
+      <PersistGate loading={null} persistor={persistor}>
+        <NavigationContainer>
+          <NativeBaseProvider>
+            <AppNavigator />
+          </NativeBaseProvider>
+        </NavigationContainer>
+      </PersistGate>
     </Provider>
   );
 }
